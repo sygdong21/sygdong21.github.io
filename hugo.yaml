@@ -1,40 +1,27 @@
 baseurl: https://sygdong21.github.io/
 languageCode: en-us
 theme: hugo-theme-stack
-title: Example Site
-copyright: Example Person
+title: sygdong
+copyright: sygdong
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
-DefaultContentLanguage: en
+DefaultContentLanguage: zh-cn
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
-hasCJKLanguage: false
+hasCJKLanguage: true
 
 languages:
-    en:
-        languageName: English
-        title: Example Site
-        weight: 1
-        params:
-            sidebar:
-                subtitle: Example description
+
     zh-cn:
         languageName: 中文
-        title: 演示站点
+        title: sygdong
         weight: 2
         params:
             sidebar:
-                subtitle: 演示说明
-    ar:
-        languageName: عربي
-        languagedirection: rtl
-        title: موقع تجريبي
-        weight: 3
-        params:
-            sidebar:
-                subtitle: وصف تجريبي
+                subtitle: 
+
 
 services:
     # Change it to your Disqus shortname before using
@@ -52,22 +39,23 @@ permalinks:
     page: /:slug/
 
 params:
-    mainSections:
+    mainSections: 
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    favicon: /favicon.ico
+     # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
-        since: 2020
+        since: 2025
         customText:
 
     dateFormat:
-        published: Jan 02, 2006
+        published: 2006-01-02
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 🍥
+        emoji: 👀
         subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         avatar:
             enabled: true
@@ -77,13 +65,13 @@ params:
     article:
         math: false
         toc: true
-        readingTime: true
+        readingTime: false
         license:
-            enabled: true
+            enabled: false
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: true
+        enabled: false
         provider: disqus
 
         disqusjs:
@@ -168,16 +156,16 @@ params:
             id:
     widgets:
         homepage:
-            - type: search
-            - type: archives
-              params:
-                  limit: 5
+            # - type: search
+            # - type: archives
+            #   params:
+            #       limit: 5
             - type: categories
               params:
                   limit: 10
-            - type: tag-cloud
-              params:
-                  limit: 10
+            # - type: tag-cloud
+            #   params:
+            #       limit: 10
         page:
             - type: toc
 
@@ -197,7 +185,7 @@ params:
 
     colorScheme:
         # Display toggle
-        toggle: true
+        toggle: false
 
         # Available values: auto, light, dark
         default: auto
@@ -217,15 +205,15 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/sygdong21
           params:
               icon: brand-github
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
+        - identifier: bilibili
+          name: bilibili
+          url: https://space.bilibili.com/114771250
           params:
-              icon: brand-twitter
+              icon: bilibili
 
 related:
     includeNewer: true
