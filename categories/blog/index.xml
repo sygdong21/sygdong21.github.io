@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Blog on sygdong</title>
+        <link>https://sygdong21.github.io/categories/blog/</link>
+        <description>Recent content in Blog on sygdong</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>sygdong</copyright>
+        <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://sygdong21.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>搭建HugoDemo</title>
+        <link>https://sygdong21.github.io/p/%E6%90%AD%E5%BB%BAhugodemo/</link>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://sygdong21.github.io/p/%E6%90%AD%E5%BB%BAhugodemo/</guid>
+        <description>&lt;img src="https://sygdong21.github.io/p/%E6%90%AD%E5%BB%BAhugodemo/hugodemo-01.jpg" alt="Featured image of post 搭建HugoDemo" /&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

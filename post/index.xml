@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>sygdong</copyright>
-        <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://sygdong21.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://sygdong21.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>搭建HugoDemo</title>
+        <link>https://sygdong21.github.io/p/%E6%90%AD%E5%BB%BAhugodemo/</link>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://sygdong21.github.io/p/%E6%90%AD%E5%BB%BAhugodemo/</guid>
+        <description>&lt;img src="https://sygdong21.github.io/p/%E6%90%AD%E5%BB%BAhugodemo/hugodemo-01.jpg" alt="Featured image of post 搭建HugoDemo" /&gt;</description>
+        </item>
+        <item>
         <title>syg test</title>
         <link>https://sygdong21.github.io/p/syg-test/</link>
         <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
