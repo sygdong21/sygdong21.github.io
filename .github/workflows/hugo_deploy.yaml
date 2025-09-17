@@ -1,0 +1,45 @@
+
+
+# 代码提交到blogcode分支时触发github action
+# gitbub action自动部署发布到master分支    所以源码在blogcode分支 public代码在master分支
+
+name: deploy
+
+on:
+  push:
+    branches:
+      - blogcode
+    paths:
+      - "content/**"
+      - "hugo.yaml"
+      - "themes/**"
+      - ".github/workflows/hugo_deploy.yaml"   
+      
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+          with:
+              fetch-depth: 0
+
+        - name: Setup Hugo
+          uses: peaceiris/actions-hugo@v3
+          with:
+              hugo-version: "latest"
+              extended: true
+
+        - name: Build Web
+          run: hugo -D
+
+        - name: Deploy Web
+          uses: peaceiris/actions-gh-pages@v4
+          with:
+              PERSONAL_TOKEN: ${{ secrets.TOKEN }}
+              EXTERNAL_REPOSITORY: sygdong21/sygdong21.github.io
+              PUBLISH_BRANCH: master
+              PUBLISH_DIR: ./public
+              commit_message: auto deploy
+
