@@ -9,93 +9,91 @@ image = "hugodemo-02.jpg"
 +++
 
 
-## Hugo框架搭建blog
+
+# Hugo框架搭建blgo页面
+
+### 前置准备
 
 - 参考资料
   
-  [博客](https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/) [视频](https://www.bilibili.com/video/BV1KSZBYTE3S/?spm_id_from=333.337.search-card.all.click&vd_source=cf5d55b6a3ced74e1cea6e6c662f92ee)
+
+[博客](https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/) [视频](https://www.bilibili.com/video/BV1KSZBYTE3S/?spm_id_from=333.337.search-card.all.click&vd_source=cf5d55b6a3ced74e1cea6e6c662f92ee)
+
+- hugo环境
   
-- Hugo环境
-  
-  [Hugo下载地址](https://github.com/gohugoio/hugo) [Hugo主题下载](https://themes.gohugo.io/)
-  
+
+[hugo下载地址](https://github.com/gohugoio/hugo)
+
+[hugo主题下载地址](https://themes.gohugo.io/)
 
 ---
 
-#### 本地部署
+### 本地部署
 
-1. 下载解压Hugo cmd命令创建dev文件夹
-
-```
-hugo new site dev
-```
-
-将hugo.exe文件复制到dev文件夹
-
-2. 添加Hugo主题
-  
-  下载主题 hugo-theme-stack-master
-  
-  重命名 hugo-theme-stack 放进dev-themes文件夹
-  
-  复制主题中示例网站exampleSite文件夹中的content文件夹和hugo.yaml文件 放到dev最外层
-  
-  ``` 
-  路径 dev\themes\hugo-theme-stack\exampleSite
-  
-  ```
-  删除与hugo.yaml冲突的hugo.toml配置文件
-  
-  编辑hugo.yaml修改主题
+- 下载解压hugo，cmd命令创建dev文件夹
   
 
-  ```
-  theme: hugo-theme-stack
-  ```
+将hugo.exe复制到dev文件夹
+
+> hugo new site dev
+
+- 添加hugo主题
   
-3. 本地部署运行
+  - 下载主题 hugo-theme-stack-master
+    
+  - 重命名为hugo-theme-stack放进dev-themes文件夹
+    
+  - 复制主题中的示例网站exampleSite文件夹中的content文件夹和hugo.yaml文件放到dev最外层
+    
   
-  ```
-  cmd启动服务    hugo server -D
-  ```
+  > 路径 dev\themes\hugo-theme-stack\exampleSite
   
-  ```
-  访问地址       http://localhost:1313/
-  ```
+  - 删除与hugo.yaml冲突的hugo.toml
+    
+  - 修改hugo.yaml配置
+    
   
+  > theme: hugo-theme-stack
+  
+
+- 本地部署运行
+  
+
+> cmd启动服务 hugo server -D
+> 
+> 访问地址 http://localhost:1313/
 
 ---
 
-#### GithubPage部署
+### GithubPage 部署
 
-1. 创建github.io项目
+- 创建github.io项目，并创建blgocode分支
   
-  创建项目blgocode分支
+  - blgocode分支用于放源码
+    
+  - master分支放自动部署生成的文件
+    
+- 克隆项目到本地，切换到blgocode分支
   
-  其中blgocode分支放hugo框架源码
+- 为blgocode分支添加源码
   
-  master分支放自动部署后生成的代码
+  - 将dev文件夹的源码添加到blgocode分支
+    
+  - 配置hugo.yaml的baserurl改为你的github.io地址
+    
   
-2. 克隆项目到本地，切换到blgocode分支
+  > baseurl: https://sygdong21.github.io/
   
-  将dev里的源码添加到本地
+  - 本地的blgocode提交到远程
+    
+- GithubAction自动部署
   
-  修改hugo.yaml 的baseurl改为你的github.io地址
-  
-  ```
-  baseurl: https://sygdong21.github.io/
-  ```
-  
-  提交到远程blgocode分支
-  
-3. Github Action实现自动化部署
-  
-
-- 在github网站开发者设置中创建token用于自动化部署
-  
-- 在github.io库中设置Repository secrets变量 将token的值写进去
-  
-- 在blogcode分支创建.github\workflows\hugo_deploy.yaml 配置文件实现自动化部署
+  - 在github网站开发者设置中创建token用于自动化部署
+    
+  - 在github.io库中设置Repository secrets变量，将token赋值给它
+    
+  - 在blogcode分支创建.github\workflows\hugo_deploy.yaml 配置文件实现自动化部署
+    
   
   ```
   
@@ -114,7 +112,7 @@ hugo new site dev
         - "hugo.yaml"
         - "themes/**"
         - ".github/workflows/hugo_deploy.yaml"   
-        
+  
   
   jobs:
     deploy:
@@ -143,13 +141,11 @@ hugo new site dev
                 PUBLISH_DIR: ./public
                 commit_message: auto deploy
   
-  
   ```
   
-- 提交到分支触发Github Action自动部署
+  - 提交到远程分支触发GithubAction自动部署
+    
+  - 访问地址
+    
   
-- 访问地址
-  
-  ```
-  https://yourGithubUsername.github.io/
-  ```
+  > https://yourGithubUsername.github.io/
