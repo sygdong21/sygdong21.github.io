@@ -21,112 +21,110 @@
         <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
         
         <guid>https://sygdong21.github.io/p/%E6%90%AD%E5%BB%BAhugodemo/</guid>
-        <description>&lt;img src="https://sygdong21.github.io/p/%E6%90%AD%E5%BB%BAhugodemo/hugodemo-02.jpg" alt="Featured image of post 搭建HugoDemo" /&gt;&lt;h2 id=&#34;hugo框架搭建blog&#34;&gt;Hugo框架搭建blog
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;参考资料&lt;/p&gt;
+        <description>&lt;img src="https://sygdong21.github.io/p/%E6%90%AD%E5%BB%BAhugodemo/hugodemo-02.jpg" alt="Featured image of post 搭建HugoDemo" /&gt;&lt;h1 id=&#34;hugo框架搭建blgo页面&#34;&gt;Hugo框架搭建blgo页面
+&lt;/h1&gt;&lt;h3 id=&#34;前置准备&#34;&gt;前置准备
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;参考资料&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;博客&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1KSZBYTE3S/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=cf5d55b6a3ced74e1cea6e6c662f92ee&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;视频&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;hugo环境&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo下载地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo主题下载地址&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;本地部署&#34;&gt;本地部署
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;下载解压hugo，cmd命令创建dev文件夹&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;将hugo.exe复制到dev文件夹&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;hugo new site dev&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;添加hugo主题&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;下载主题 hugo-theme-stack-master&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Hugo环境&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo下载地址&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo主题下载&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;重命名为hugo-theme-stack放进dev-themes文件夹&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;复制主题中的示例网站exampleSite文件夹中的content文件夹和hugo.yaml文件放到dev最外层&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;路径 dev\themes\hugo-theme-stack\exampleSite&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;删除与hugo.yaml冲突的hugo.toml&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改hugo.yaml配置&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;theme: hugo-theme-stack&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;本地部署运行&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;cmd启动服务 hugo server -D&lt;/p&gt;
+&lt;p&gt;访问地址 http://localhost:1313/&lt;/p&gt;&lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h4 id=&#34;本地部署&#34;&gt;本地部署
-&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;下载解压Hugo cmd命令创建dev文件夹&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new site dev
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;将hugo.exe文件复制到dev文件夹&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;添加Hugo主题&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;下载主题 hugo-theme-stack-master&lt;/p&gt;
-&lt;p&gt;重命名 hugo-theme-stack 放进dev-themes文件夹&lt;/p&gt;
-&lt;p&gt;复制主题中示例网站exampleSite文件夹中的content文件夹和hugo.yaml文件 放到dev最外层&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;路径 dev\themes\hugo-theme-stack\exampleSite
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;删除与hugo.yaml冲突的hugo.toml配置文件&lt;/p&gt;
-&lt;p&gt;编辑hugo.yaml修改主题&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;theme: hugo-theme-stack
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;本地部署运行&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cmd启动服务    hugo server -D
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;访问地址       http://localhost:1313/
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
-&lt;h4 id=&#34;githubpage部署&#34;&gt;GithubPage部署
-&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;创建github.io项目&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;创建项目blgocode分支&lt;/p&gt;
-&lt;p&gt;其中blgocode分支放hugo框架源码&lt;/p&gt;
-&lt;p&gt;master分支放自动部署后生成的代码&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;克隆项目到本地，切换到blgocode分支&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;将dev里的源码添加到本地&lt;/p&gt;
-&lt;p&gt;修改hugo.yaml 的baseurl改为你的github.io地址&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;baseurl: https://sygdong21.github.io/
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;提交到远程blgocode分支&lt;/p&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Github Action实现自动化部署&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h3 id=&#34;githubpage-部署&#34;&gt;GithubPage 部署
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;创建github.io项目，并创建blgocode分支&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;blgocode分支用于放源码&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;master分支放自动部署生成的文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;克隆项目到本地，切换到blgocode分支&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;为blgocode分支添加源码&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;将dev文件夹的源码添加到blgocode分支&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置hugo.yaml的baserurl改为你的github.io地址&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;baseurl: &lt;a class=&#34;link&#34; href=&#34;https://sygdong21.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://sygdong21.github.io/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;本地的blgocode提交到远程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GithubAction自动部署&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;在github网站开发者设置中创建token用于自动化部署&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;在github.io库中设置Repository secrets变量 将token的值写进去&lt;/p&gt;
+&lt;p&gt;在github.io库中设置Repository secrets变量，将token赋值给它&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;在blogcode分支创建.github\workflows\hugo_deploy.yaml 配置文件实现自动化部署&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -221,21 +219,18 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              commit_message: auto deploy
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;提交到分支触发Github Action自动部署&lt;/p&gt;
+&lt;p&gt;提交到远程分支触发GithubAction自动部署&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;访问地址&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;https://yourGithubUsername.github.io/
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://yourGithubUsername.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://yourGithubUsername.github.io/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>
