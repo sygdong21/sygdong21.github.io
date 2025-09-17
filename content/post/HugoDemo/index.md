@@ -5,7 +5,7 @@ categories = [
     "Blog"
 ]
 
-image = "hugodemo-01.jpg"
+image = "hugodemo-02.jpg"
 +++
 
 
@@ -40,15 +40,15 @@ hugo new site dev
   
   复制主题中示例网站exampleSite文件夹中的content文件夹和hugo.yaml文件 放到dev最外层
   
-  ``` ```
+  ``` 
   路径 dev\themes\hugo-theme-stack\exampleSite
   
   ```
   删除与hugo.yaml冲突的hugo.toml配置文件
   
   编辑hugo.yaml修改主题
-  ```
   
+
   ```
   theme: hugo-theme-stack
   ```
