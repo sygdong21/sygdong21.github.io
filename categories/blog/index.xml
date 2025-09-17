@@ -13,7 +13,7 @@
         <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
         
         <guid>https://sygdong21.github.io/p/%E6%90%AD%E5%BB%BAhugodemo/</guid>
-        <description>&lt;img src="https://sygdong21.github.io/p/%E6%90%AD%E5%BB%BAhugodemo/hugodemo-01.jpg" alt="Featured image of post 搭建HugoDemo" /&gt;&lt;h2 id=&#34;hugo框架搭建blog&#34;&gt;Hugo框架搭建blog
+        <description>&lt;img src="https://sygdong21.github.io/p/%E6%90%AD%E5%BB%BAhugodemo/hugodemo-02.jpg" alt="Featured image of post 搭建HugoDemo" /&gt;&lt;h2 id=&#34;hugo框架搭建blog&#34;&gt;Hugo框架搭建blog
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;参考资料&lt;/p&gt;
@@ -48,21 +48,17 @@
 &lt;p&gt;下载主题 hugo-theme-stack-master&lt;/p&gt;
 &lt;p&gt;重命名 hugo-theme-stack 放进dev-themes文件夹&lt;/p&gt;
 &lt;p&gt;复制主题中示例网站exampleSite文件夹中的content文件夹和hugo.yaml文件 放到dev最外层&lt;/p&gt;
-&lt;p&gt;&lt;code&gt; &lt;/code&gt;
-路径 dev\themes\hugo-theme-stack\exampleSite&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;删除与hugo.yaml冲突的hugo.toml配置文件
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;编辑hugo.yaml修改主题
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;路径 dev\themes\hugo-theme-stack\exampleSite
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;&lt;p&gt;删除与hugo.yaml冲突的hugo.toml配置文件&lt;/p&gt;
+&lt;p&gt;编辑hugo.yaml修改主题&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
