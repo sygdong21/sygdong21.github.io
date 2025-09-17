@@ -1,5 +1,6 @@
 workspace.code-workspace
 public
 static
+resources
 hugo.exe
 .hugo_build.lock
